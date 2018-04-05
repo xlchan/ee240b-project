@@ -1,0 +1,6 @@
+BAG_prim $BAG_TECH_CONFIG_DIR/DesignModules
+demo_templates $BAG_WORK_DIR/BAG_XBase_demo/BagModules
+demo_testbenches $BAG_WORK_DIR/BAG_XBase_demo/BagModules
+bag_serdes_ec $BAG_WORK_DIR/bag_serdes_ec/BagModules
+bag_testbenches_ec $BAG_WORK_DIR/bag_testbenches_ec/BagModules
+ee240b_mos_char /home/cc/cs199/fa13/class/cs199-cpo/ee240b/bag_workspace_gpdk045/BagModules

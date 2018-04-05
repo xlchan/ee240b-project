@@ -1,0 +1,100 @@
+\# Program start time:     UTC 2018.04.04 04:36:46.276
+\# Local time: PDT (UTC-07:00) 2018.04.03 21:36:46.276
+\o Program:		@(#)$CDS: virtuoso version 6.1.7-64b 11/21/2017 20:39 (sjfhw301) $
+\o Hierarchy:		/share/instsww/cadence/IC.06.17.716/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.7-64b.500.16  (64-bit addresses)
+\# Command line:	/share/instsww/cadence/IC617/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso23077 -mpshost hpse-10.EECS.Berkeley.EDU -davinciService DaVinciService_23077_1522816021 -log /home/cc/cs199/fa13/class/cs199-cpo/ee240b/bag_workspace_gpdk045/logs_cs199-cpo/logs0/Job2.log1 -licenseLockFileName /home/cc/cs199/fa13/class/cs199-cpo/ee240b/bag_workspace_gpdk045/.tmp_cs199-cpo/.hpse-10.EECS.Berkeley.EDU_23077 -nograph -nostdin -axlChildIdFlag 2
+\# Host name (type):	hpse-10.EECS.Berkeley.EDU (x86_64)
+\# Operating system:	Linux 2.6.32-696.23.1.el6.centos.plus.x86_64 #1 SMP Wed Mar 14 11:51:06 UTC 2018
+\# Linux /etc/issue:	CentOS release 6.9 (Final)
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	hpse-10.EECS.Berkeley.EDU:80 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			RealVNC Ltd (VNC nograph server, PID 3046)
+\# Depth of Visual (Root):	16 (16)
+\# Number of Planes Used:	16
+\# X version:		11.0 (vendor release 3370)
+\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
+\# 			current id 0x0, current max 0x3ffffa (4194298)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        450 MB
+\# Available memory:	     16,892 MB
+\# System memory:	     32,159 MB
+\# Maximum memory size:	     31,782 MB
+\# Max mem available:	     16,965 MB
+\# Initial memory used:	         73 MB
+\#        process size:	      1,032 MB
+\# Thread usage limits (effective/default):	maxthreads 1024/1024 maxload 8.00/8.00
+\# Qt version:		4.8.5
+\# Window Manager:	other
+\# User Name:		cs199-cpo
+\o Working Directory:	hpse-10.EECS.Berkeley.EDU:/home/cc/cs199/fa13/class/cs199-cpo/ee240b/bag_workspace_gpdk045
+\# Process Id:		3113
+\o 
+\o COPYRIGHT (C) 1992-2017  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2017  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading socket.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\# Memory report: using         177 MB, process size 1,258 MB at UTC 2018.04.04 04:36:47.922
+\o *Info*    Exporting services from client ... 
+\o 
+\o *INFO* (icLic-303) virtuoso: PID=3113, Child Mode is true, ICPR Mode is true, Registration Timeout is 180 seconds, Communication Timeout is 180 seconds.
+\o STARTING CDSINIT
+\o END OF STANDARD CONFIG SETTINGS
+\o loading vars from ./.cdsenv for tool license
+\o loading vars from ./.cdsenv for tool asimenv
+\o loading vars from ./.cdsenv for tool auCore
+\o loading vars from ./.cdsenv for tool ihdl
+\o loading vars from ./.cdsenv for tool layout
+\o loading vars from ./.cdsenv for tool ui
+\o loading vars from ./.cdsenv for tool graphic
+\o loading vars from ./.cdsenv for tool schematic
+\o loading vars from ./.cdsenv for tool viva
+\o END OF CUSTOM CONFIG SETTINGS
+\o *Info*    Client has finished starting ... 
+\o 
+\p > 
+\o Loading pe.cxt 
+\a _treeSetOpcGUI(t)
+\r t
+\# Available memory:         16,778 MB at UTC 2018.04.04 04:36:56.814
+\# Memory report: Maximum memory size now 16,976 MB at UTC 2018.04.04 04:36:56.814
+\# Thread usage report: 9 active threads, active load 1.00 at UTC 2018.04.04 04:36:56.814
+\o 
+\o *Info*    Received signal SIGTERM.
+\o 
+\o 
+\o Loading simui.cxt 
+\# Memory report: on exit            201 MB, process size 1,288 MB at UTC 2018.04.04 04:38:24.106
+\# Memory report: peak usage         201 MB, process size 1,288 MB
