@@ -1,0 +1,2708 @@
+<?xml version="1.0"?>
+<setupdb version="6">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test>project_ph2:strongarm:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>strongarm</value>
+					</option>
+					<option>lib
+						<value>project_ph2</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>project_ph2:strongarm:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>strongarm</value>
+					</option>
+					<option>lib
+						<value>project_ph2</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+				<outputs>
+					<output>/clk
+						<evalType>point</evalType>
+					</output>
+					<output>/vin+
+						<evalType>point</evalType>
+					</output>
+					<output>/vin-
+						<evalType>point</evalType>
+					</output>
+					<output>vo_diff
+						<evalType>point</evalType>
+					</output>
+					<output>"/V1/PLUS"
+						<evalType>point</evalType>
+					</output>
+					<output>J/bit
+						<evalType>point</evalType>
+					</output>
+					<output>int_curr
+						<evalType>point</evalType>
+					</output>
+					<output>vo_setup
+						<evalType>point</evalType>
+					</output>
+					<output>vi_diff
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+			</test>
+		</tests>
+		<vars>
+			<var>nfp_sa
+				<value>1.2</value>
+				<dependentTests>
+					<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>nfx
+				<value>3</value>
+				<dependentTests>
+					<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+					<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>nfn_sa
+				<value>22.8</value>
+				<dependentTests>
+					<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>nft
+				<value>22.8</value>
+				<dependentTests>
+					<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+					<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>nfsw
+				<value>2</value>
+				<dependentTests>
+					<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+					<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>vin
+				<value>100m</value>
+				<dependentTests>
+					<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+					<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>vref
+				<value>600m</value>
+				<dependentTests>
+					<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+					<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>vin1
+				<value>-vdd/2</value>
+				<dependentTests>
+					<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+					<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>vin2
+				<value>{From/To}Linear:15m:1m:25m{From/To}</value>
+				<dependentTests>
+					<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+					<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>vcm
+				<value>600m</value>
+				<dependentTests>
+					<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+					<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>voff_bot
+				<value>6.11m</value>
+				<dependentTests>
+					<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>voff_top
+				<value>16.84m</value>
+				<dependentTests>
+					<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>t_per
+				<value>200p</value>
+				<dependentTests>
+					<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+					<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>t_sim
+				<value>8*t_per</value>
+				<dependentTests>
+					<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>t_delay
+				<value>t_per/2</value>
+				<dependentTests>
+					<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+					<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>t_rise
+				<value>20p</value>
+				<dependentTests>
+					<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+					<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>cff
+				<value>5f</value>
+				<dependentTests>
+					<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+					<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>vdd
+				<value>1.2</value>
+				<dependentTests>
+					<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+					<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+			<plottingoption>allplottingtemplates
+				<value></value>
+			</plottingoption>
+			<plottingoption>defaultplottingtemplate
+				<value></value>
+			</plottingoption>
+		</plottingoptions>
+	</active>
+	<history>History
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.98
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>project_ph2:strongarm:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>strongarm</value>
+							</option>
+							<option>lib
+								<value>project_ph2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>project_ph2:strongarm:1_none_Interactive.98</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>strongarm</value>
+							</option>
+							<option>lib
+								<value>project_ph2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>/clk
+								<evalType>point</evalType>
+							</output>
+							<output>/vin+
+								<evalType>point</evalType>
+							</output>
+							<output>/vin-
+								<evalType>point</evalType>
+							</output>
+							<output>vo_diff
+								<evalType>point</evalType>
+							</output>
+							<output>"/V1/PLUS"
+								<evalType>point</evalType>
+							</output>
+							<output>J/bit
+								<evalType>point</evalType>
+							</output>
+							<output>int_curr
+								<evalType>point</evalType>
+							</output>
+							<output>vo_setup
+								<evalType>point</evalType>
+							</output>
+							<output>vi_diff
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>nfp_sa
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfx
+						<value>3</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfn_sa
+						<value>22.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nft
+						<value>22.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfsw
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin
+						<value>100m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vref
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin1
+						<value>-vdd/2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin2
+						<value>{From/To}Linear:5m:1m:10m{From/To}</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vcm
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>voff_bot
+						<value>6.11m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>voff_top
+						<value>16.84m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_per
+						<value>200p</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_sim
+						<value>8*t_per</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_delay
+						<value>t_per/2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_rise
+						<value>20p</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cff
+						<value>5f</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 28 14:46:12 2018</timestamp>
+			<resultsname>/home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph2/strongarm/adexl/results/data/Interactive.98.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.98.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/hpse-10.EECS.Berkeley.EDU_cs199-cpo_144612951</localpsfdir>
+			<psfdir>/home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph2/strongarm/adexl/results/data/Interactive.98</psfdir>
+			<simdir>$AXL_PROJECT_DIR/project_ph2/strongarm/adexl/results/data/Interactive.98</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph2/strongarm/adexl/results/data/Interactive.98.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.98.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>vin2
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.99
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>project_ph2:strongarm:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>strongarm</value>
+							</option>
+							<option>lib
+								<value>project_ph2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>project_ph2:strongarm:1_none_Interactive.99</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>strongarm</value>
+							</option>
+							<option>lib
+								<value>project_ph2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>/clk
+								<evalType>point</evalType>
+							</output>
+							<output>/vin+
+								<evalType>point</evalType>
+							</output>
+							<output>/vin-
+								<evalType>point</evalType>
+							</output>
+							<output>vo_diff
+								<evalType>point</evalType>
+							</output>
+							<output>"/V1/PLUS"
+								<evalType>point</evalType>
+							</output>
+							<output>J/bit
+								<evalType>point</evalType>
+							</output>
+							<output>int_curr
+								<evalType>point</evalType>
+							</output>
+							<output>vo_setup
+								<evalType>point</evalType>
+							</output>
+							<output>vi_diff
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>nfp_sa
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfx
+						<value>3</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfn_sa
+						<value>22.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nft
+						<value>22.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfsw
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin
+						<value>100m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vref
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin1
+						<value>-vdd/2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin2
+						<value>{From/To}Linear:5m:1m:10m{From/To}</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vcm
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>voff_bot
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>voff_top
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_per
+						<value>200p</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_sim
+						<value>8*t_per</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_delay
+						<value>t_per/2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_rise
+						<value>20p</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cff
+						<value>5f</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 28 14:47:28 2018</timestamp>
+			<resultsname>/home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph2/strongarm/adexl/results/data/Interactive.99.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.99.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/hpse-10.EECS.Berkeley.EDU_cs199-cpo_144728631</localpsfdir>
+			<psfdir>/home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph2/strongarm/adexl/results/data/Interactive.99</psfdir>
+			<simdir>$AXL_PROJECT_DIR/project_ph2/strongarm/adexl/results/data/Interactive.99</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph2/strongarm/adexl/results/data/Interactive.99.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.99.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>vin2
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.100
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>project_ph2:strongarm:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>strongarm</value>
+							</option>
+							<option>lib
+								<value>project_ph2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>project_ph2:strongarm:1_none_Interactive.100</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>strongarm</value>
+							</option>
+							<option>lib
+								<value>project_ph2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>/clk
+								<evalType>point</evalType>
+							</output>
+							<output>/vin+
+								<evalType>point</evalType>
+							</output>
+							<output>/vin-
+								<evalType>point</evalType>
+							</output>
+							<output>vo_diff
+								<evalType>point</evalType>
+							</output>
+							<output>"/V1/PLUS"
+								<evalType>point</evalType>
+							</output>
+							<output>J/bit
+								<evalType>point</evalType>
+							</output>
+							<output>int_curr
+								<evalType>point</evalType>
+							</output>
+							<output>vo_setup
+								<evalType>point</evalType>
+							</output>
+							<output>vi_diff
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>nfp_sa
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfx
+						<value>3</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfn_sa
+						<value>22.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nft
+						<value>22.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfsw
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin
+						<value>100m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vref
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin1
+						<value>vdd/2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin2
+						<value>{From/To}Linear:-10m:1m:-5m{From/To}</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vcm
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>voff_bot
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>voff_top
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_per
+						<value>200p</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_sim
+						<value>8*t_per</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_delay
+						<value>t_per/2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_rise
+						<value>20p</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cff
+						<value>5f</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 28 14:49:14 2018</timestamp>
+			<resultsname>/home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph2/strongarm/adexl/results/data/Interactive.100.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.100.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/hpse-10.EECS.Berkeley.EDU_cs199-cpo_144914259</localpsfdir>
+			<psfdir>/home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph2/strongarm/adexl/results/data/Interactive.100</psfdir>
+			<simdir>$AXL_PROJECT_DIR/project_ph2/strongarm/adexl/results/data/Interactive.100</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph2/strongarm/adexl/results/data/Interactive.100.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.100.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>vin2
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.101
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>project_ph2:strongarm:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>strongarm</value>
+							</option>
+							<option>lib
+								<value>project_ph2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>project_ph2:strongarm:1_none_Interactive.101</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>strongarm</value>
+							</option>
+							<option>lib
+								<value>project_ph2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>/clk
+								<evalType>point</evalType>
+							</output>
+							<output>/vin+
+								<evalType>point</evalType>
+							</output>
+							<output>/vin-
+								<evalType>point</evalType>
+							</output>
+							<output>vo_diff
+								<evalType>point</evalType>
+							</output>
+							<output>"/V1/PLUS"
+								<evalType>point</evalType>
+							</output>
+							<output>J/bit
+								<evalType>point</evalType>
+							</output>
+							<output>int_curr
+								<evalType>point</evalType>
+							</output>
+							<output>vo_setup
+								<evalType>point</evalType>
+							</output>
+							<output>vi_diff
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>nfp_sa
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfx
+						<value>3</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfn_sa
+						<value>22.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nft
+						<value>22.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfsw
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin
+						<value>100m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vref
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin1
+						<value>-vdd/2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin2
+						<value>{From/To}Linear:5m:1m:10m{From/To}</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vcm
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>voff_bot
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>voff_top
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_per
+						<value>200p</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_sim
+						<value>8*t_per</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_delay
+						<value>t_per/2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_rise
+						<value>20p</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cff
+						<value>5f</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 28 14:50:57 2018</timestamp>
+			<resultsname>/home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph2/strongarm/adexl/results/data/Interactive.101.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.101.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/hpse-10.EECS.Berkeley.EDU_cs199-cpo_145057410</localpsfdir>
+			<psfdir>/home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph2/strongarm/adexl/results/data/Interactive.101</psfdir>
+			<simdir>$AXL_PROJECT_DIR/project_ph2/strongarm/adexl/results/data/Interactive.101</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph2/strongarm/adexl/results/data/Interactive.101.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.101.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>vin2
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.102
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>project_ph2:strongarm:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>strongarm</value>
+							</option>
+							<option>lib
+								<value>project_ph2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>project_ph2:strongarm:1_none_Interactive.102</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>strongarm</value>
+							</option>
+							<option>lib
+								<value>project_ph2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>/clk
+								<evalType>point</evalType>
+							</output>
+							<output>/vin+
+								<evalType>point</evalType>
+							</output>
+							<output>/vin-
+								<evalType>point</evalType>
+							</output>
+							<output>vo_diff
+								<evalType>point</evalType>
+							</output>
+							<output>"/V1/PLUS"
+								<evalType>point</evalType>
+							</output>
+							<output>J/bit
+								<evalType>point</evalType>
+							</output>
+							<output>int_curr
+								<evalType>point</evalType>
+							</output>
+							<output>vo_setup
+								<evalType>point</evalType>
+							</output>
+							<output>vi_diff
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>nfp_sa
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfx
+						<value>3</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfn_sa
+						<value>22.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nft
+						<value>22.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfsw
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin
+						<value>100m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vref
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin1
+						<value>-vdd/2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin2
+						<value>{From/To}Linear:5m:1m:10m{From/To}</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vcm
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>voff_bot
+						<value>6.11m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>voff_top
+						<value>16.84m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_per
+						<value>200p</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_sim
+						<value>8*t_per</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_delay
+						<value>t_per/2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_rise
+						<value>20p</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cff
+						<value>5f</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 28 14:53:23 2018</timestamp>
+			<resultsname>/home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph2/strongarm/adexl/results/data/Interactive.102.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.102.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/hpse-10.EECS.Berkeley.EDU_cs199-cpo_145323935</localpsfdir>
+			<psfdir>/home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph2/strongarm/adexl/results/data/Interactive.102</psfdir>
+			<simdir>$AXL_PROJECT_DIR/project_ph2/strongarm/adexl/results/data/Interactive.102</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph2/strongarm/adexl/results/data/Interactive.102.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.102.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>vin2
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.103
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>project_ph2:strongarm:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>strongarm</value>
+							</option>
+							<option>lib
+								<value>project_ph2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>project_ph2:strongarm:1_none_Interactive.103</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>strongarm</value>
+							</option>
+							<option>lib
+								<value>project_ph2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>/clk
+								<evalType>point</evalType>
+							</output>
+							<output>/vin+
+								<evalType>point</evalType>
+							</output>
+							<output>/vin-
+								<evalType>point</evalType>
+							</output>
+							<output>vo_diff
+								<evalType>point</evalType>
+							</output>
+							<output>"/V1/PLUS"
+								<evalType>point</evalType>
+							</output>
+							<output>J/bit
+								<evalType>point</evalType>
+							</output>
+							<output>int_curr
+								<evalType>point</evalType>
+							</output>
+							<output>vo_setup
+								<evalType>point</evalType>
+							</output>
+							<output>vi_diff
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>nfp_sa
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfx
+						<value>3</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfn_sa
+						<value>22.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nft
+						<value>22.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfsw
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin
+						<value>100m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vref
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin1
+						<value>-vdd/2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin2
+						<value>{From/To}Linear:1m:1m:5m{From/To}</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vcm
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>voff_bot
+						<value>6.11m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>voff_top
+						<value>16.84m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_per
+						<value>200p</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_sim
+						<value>8*t_per</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_delay
+						<value>t_per/2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_rise
+						<value>20p</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cff
+						<value>5f</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 28 14:54:07 2018</timestamp>
+			<resultsname>/home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph2/strongarm/adexl/results/data/Interactive.103.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.103.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/hpse-10.EECS.Berkeley.EDU_cs199-cpo_145407198</localpsfdir>
+			<psfdir>/home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph2/strongarm/adexl/results/data/Interactive.103</psfdir>
+			<simdir>$AXL_PROJECT_DIR/project_ph2/strongarm/adexl/results/data/Interactive.103</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph2/strongarm/adexl/results/data/Interactive.103.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.103.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>vin2
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.104
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>project_ph2:strongarm:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>strongarm</value>
+							</option>
+							<option>lib
+								<value>project_ph2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>project_ph2:strongarm:1_none_Interactive.104</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>strongarm</value>
+							</option>
+							<option>lib
+								<value>project_ph2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>/clk
+								<evalType>point</evalType>
+							</output>
+							<output>/vin+
+								<evalType>point</evalType>
+							</output>
+							<output>/vin-
+								<evalType>point</evalType>
+							</output>
+							<output>vo_diff
+								<evalType>point</evalType>
+							</output>
+							<output>"/V1/PLUS"
+								<evalType>point</evalType>
+							</output>
+							<output>J/bit
+								<evalType>point</evalType>
+							</output>
+							<output>int_curr
+								<evalType>point</evalType>
+							</output>
+							<output>vo_setup
+								<evalType>point</evalType>
+							</output>
+							<output>vi_diff
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>nfp_sa
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfx
+						<value>3</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfn_sa
+						<value>22.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nft
+						<value>22.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfsw
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin
+						<value>100m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vref
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin1
+						<value>-vdd/2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin2
+						<value>{From/To}Linear:100u:100u:900u{From/To}</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vcm
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>voff_bot
+						<value>6.11m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>voff_top
+						<value>16.84m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_per
+						<value>200p</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_sim
+						<value>8*t_per</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_delay
+						<value>t_per/2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_rise
+						<value>20p</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cff
+						<value>5f</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 28 14:55:23 2018</timestamp>
+			<resultsname>/home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph2/strongarm/adexl/results/data/Interactive.104.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.104.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/hpse-10.EECS.Berkeley.EDU_cs199-cpo_145523447</localpsfdir>
+			<psfdir>/home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph2/strongarm/adexl/results/data/Interactive.104</psfdir>
+			<simdir>$AXL_PROJECT_DIR/project_ph2/strongarm/adexl/results/data/Interactive.104</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph2/strongarm/adexl/results/data/Interactive.104.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.104.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>vin2
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.105
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>project_ph2:strongarm:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>strongarm</value>
+							</option>
+							<option>lib
+								<value>project_ph2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>project_ph2:strongarm:1_none_Interactive.105</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>strongarm</value>
+							</option>
+							<option>lib
+								<value>project_ph2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>/clk
+								<evalType>point</evalType>
+							</output>
+							<output>/vin+
+								<evalType>point</evalType>
+							</output>
+							<output>/vin-
+								<evalType>point</evalType>
+							</output>
+							<output>vo_diff
+								<evalType>point</evalType>
+							</output>
+							<output>"/V1/PLUS"
+								<evalType>point</evalType>
+							</output>
+							<output>J/bit
+								<evalType>point</evalType>
+							</output>
+							<output>int_curr
+								<evalType>point</evalType>
+							</output>
+							<output>vo_setup
+								<evalType>point</evalType>
+							</output>
+							<output>vi_diff
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>nfp_sa
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfx
+						<value>3</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfn_sa
+						<value>22.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nft
+						<value>22.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfsw
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin
+						<value>100m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vref
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin1
+						<value>-vdd/2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin2
+						<value>{From/To}Linear:1m:1m:5m{From/To}</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vcm
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>voff_bot
+						<value>6.11m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>voff_top
+						<value>16.84m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_per
+						<value>200p</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_sim
+						<value>8*t_per</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_delay
+						<value>t_per/2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_rise
+						<value>20p</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cff
+						<value>5f</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 28 14:56:13 2018</timestamp>
+			<resultsname>/home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph2/strongarm/adexl/results/data/Interactive.105.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.105.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/hpse-10.EECS.Berkeley.EDU_cs199-cpo_145613605</localpsfdir>
+			<psfdir>/home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph2/strongarm/adexl/results/data/Interactive.105</psfdir>
+			<simdir>$AXL_PROJECT_DIR/project_ph2/strongarm/adexl/results/data/Interactive.105</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph2/strongarm/adexl/results/data/Interactive.105.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.105.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>vin2
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.106
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>project_ph2:strongarm:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>strongarm</value>
+							</option>
+							<option>lib
+								<value>project_ph2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>project_ph2:strongarm:1_none_Interactive.106</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>strongarm</value>
+							</option>
+							<option>lib
+								<value>project_ph2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>/clk
+								<evalType>point</evalType>
+							</output>
+							<output>/vin+
+								<evalType>point</evalType>
+							</output>
+							<output>/vin-
+								<evalType>point</evalType>
+							</output>
+							<output>vo_diff
+								<evalType>point</evalType>
+							</output>
+							<output>"/V1/PLUS"
+								<evalType>point</evalType>
+							</output>
+							<output>J/bit
+								<evalType>point</evalType>
+							</output>
+							<output>int_curr
+								<evalType>point</evalType>
+							</output>
+							<output>vo_setup
+								<evalType>point</evalType>
+							</output>
+							<output>vi_diff
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>nfp_sa
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfx
+						<value>3</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfn_sa
+						<value>22.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nft
+						<value>22.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfsw
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin
+						<value>100m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vref
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin1
+						<value>-vdd/2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin2
+						<value>{From/To}Linear:1m:1m:5m{From/To}</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vcm
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>voff_bot
+						<value>6.11m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>voff_top
+						<value>16.84m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_per
+						<value>200p</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_sim
+						<value>8*t_per</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_delay
+						<value>t_per/2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_rise
+						<value>20p</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cff
+						<value>5f</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 28 14:58:01 2018</timestamp>
+			<resultsname>/home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph2/strongarm/adexl/results/data/Interactive.106.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.106.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/hpse-10.EECS.Berkeley.EDU_cs199-cpo_145801120</localpsfdir>
+			<psfdir>/home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph2/strongarm/adexl/results/data/Interactive.106</psfdir>
+			<simdir>$AXL_PROJECT_DIR/project_ph2/strongarm/adexl/results/data/Interactive.106</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph2/strongarm/adexl/results/data/Interactive.106.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.106.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>vin2
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.107
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>project_ph2:strongarm:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>strongarm</value>
+							</option>
+							<option>lib
+								<value>project_ph2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>project_ph2:strongarm:1_none_Interactive.107</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>strongarm</value>
+							</option>
+							<option>lib
+								<value>project_ph2</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>/clk
+								<evalType>point</evalType>
+							</output>
+							<output>/vin+
+								<evalType>point</evalType>
+							</output>
+							<output>/vin-
+								<evalType>point</evalType>
+							</output>
+							<output>vo_diff
+								<evalType>point</evalType>
+							</output>
+							<output>"/V1/PLUS"
+								<evalType>point</evalType>
+							</output>
+							<output>J/bit
+								<evalType>point</evalType>
+							</output>
+							<output>int_curr
+								<evalType>point</evalType>
+							</output>
+							<output>vo_setup
+								<evalType>point</evalType>
+							</output>
+							<output>vi_diff
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>nfp_sa
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfx
+						<value>3</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfn_sa
+						<value>22.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nft
+						<value>22.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>nfsw
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin
+						<value>100m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vref
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin1
+						<value>-vdd/2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vin2
+						<value>{From/To}Linear:15m:1m:25m{From/To}</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vcm
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>voff_bot
+						<value>6.11m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>voff_top
+						<value>16.84m</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_per
+						<value>200p</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_sim
+						<value>8*t_per</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_delay
+						<value>t_per/2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>t_rise
+						<value>20p</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>cff
+						<value>5f</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">project_ph2:comparator_strongarm:1</dependentTest>
+							<dependentTest omitted="0">project_ph2:strongarm:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 28 14:59:26 2018</timestamp>
+			<resultsname>/home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph2/strongarm/adexl/results/data/Interactive.107.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.107.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/hpse-10.EECS.Berkeley.EDU_cs199-cpo_145926111</localpsfdir>
+			<psfdir>/home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph2/strongarm/adexl/results/data/Interactive.107</psfdir>
+			<simdir>$AXL_PROJECT_DIR/project_ph2/strongarm/adexl/results/data/Interactive.107</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph2/strongarm/adexl/results/data/Interactive.107.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.107.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>vin2
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

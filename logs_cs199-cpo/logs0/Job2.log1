@@ -1,102 +1,559 @@
-*Info*    Exporting services from client ... 
-
-*Info*    Client has finished starting ... 
-
-
-
-*Info*    Configuring the session ...
-
-	Library      = project_ph2
-	Cell         = comparator
-	View         = schematic
-	Simulator    = spectre
-	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = project_ph2:comparator:1_none_Interactive.0
-	Results DB   = /home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph2/comparator/adexl/results/data/Interactive.0.rdb
-	Results Dir  = /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph2/comparator/adexl/results/data/Interactive.0/1/project_ph2:comparator:1
-	Results Loc  = /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph2/comparator/adexl/results/data
-	Project Dir  = /home/cc/cs199/fa13/class/cs199-cpo/simulation
-	Setup DB loc = /home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph2/comparator/adexl
-	File Encoding = 0
-
-
-
-*Info*    The auto suspension is disabled.
-
-
-
-
-
-
-*Info*    Run start for Point ID (0 1) on testbench [
-          project_ph2:comparator:1 ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting var idc = "1.83"
-Setting var nf = "50"
-Setting var nf_in = "1"
-Setting var nf_xc = "50"
-Setting var rload = "945k"
-Setting temp(T) = 27
-Setting var vg = "0.372"
-Setting var vin = "20m"
-
-*Info*    Netlist Directory =
-          /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph2/comparator/adexl/results/data/Interactive.0/1/project_ph2:comparator:1/netlist
-
-
-*Info*    Data Directory    =
-          /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph2/comparator/adexl/results/data/Interactive.0/1/project_ph2:comparator:1
-
-
-*Info*    Creating Netlist for Point ID (0 1)
-
-generate netlist...
-Begin Incremental Netlisting Apr 14 19:21:34 2018
-WARNING (OSSHNL-226): There are more design variables used in the current netlisting session as
-compared to the last session in the current run directory. The netlist(s)
-generated in the last netlisting session cannot be reused for incremental
-netlisting. Therefore re-netlisting the design.
-
-End netlisting Apr 14 19:21:34 2018
-
-Netlisting Statistics:
-	Number of components:   17
-
-	Elapsed time:          1.0s (17.00/s)
-Errors: 0	Warnings: 0
-      ...successful.
-compose simulator input file...
-      ...successful.
-
-*Info*    Running simulation on testbench [ project_ph2:comparator:1
-          ] for Point ID (0 1).
-
-Delete psf data in /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph2/comparator/adexl/results/data/Interactive.0/1/project_ph2:comparator:1/psf.
-compose simulator input file...
-      ...successful.
-start simulator if needed...
-      ...successful.
-simulate...
-To view the simulator output, right-click on the test name, result 
-name, or any value in the "Results" tab of the Outputs section and 
-choose "Output Log" menu option.
-INFO (ADE-3071): Simulation completed successfully.
-reading simulation data...
-      ...successful.
-*Info*    Client has finished evaluating ... 
-
-
-*Info*    Run complete for Point ID (0 1) on testbench [
-          project_ph2:comparator:1 ].
-
-
-
-
-
-Simulation design variables differ from those on the cellView,
-they have been saved in the file "/tmp/saved-design-variables15".
-To save future changes, copy variables to cellView before exiting.
+\# Program start time:     UTC 2018.04.29 16:15:37.816
+\# Local time: PDT (UTC-07:00) 2018.04.29 09:15:37.816
+\o Program:		@(#)$CDS: virtuoso version 6.1.7-64b 11/21/2017 20:39 (sjfhw301) $
+\o Hierarchy:		/share/instsww/cadence/IC.06.17.716/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.7-64b.500.16  (64-bit addresses)
+\# Command line:	/share/instsww/cadence/IC617/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso31453 -mpshost hpse-10.EECS.Berkeley.EDU -davinciService DaVinciService_31453_1525016002 -log /home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/logs_cs199-cpo/logs0/Job2.log1 -licenseLockFileName /home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/.tmp_cs199-cpo/.hpse-10.EECS.Berkeley.EDU_31453 -nograph -nostdin -axlChildIdFlag 2
+\# Host name (type):	hpse-10.EECS.Berkeley.EDU (x86_64)
+\# Operating system:	Linux 2.6.32-696.23.1.el6.centos.plus.x86_64 #1 SMP Wed Mar 14 11:51:06 UTC 2018
+\# Linux /etc/issue:	CentOS release 6.9 (Final)
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	hpse-10.EECS.Berkeley.EDU:80 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			RealVNC Ltd (VNC nograph server, PID 8863)
+\# Depth of Visual (Root):	16 (16)
+\# Number of Planes Used:	16
+\# X version:		11.0 (vendor release 3370)
+\# X resource pool:	base 0x1000000, mask 0x3fffff (4194303), shift 0
+\# 			current id 0x0, current max 0x3ffffa (4194298)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        453 MB
+\# Available memory:	      6,916 MB
+\# System memory:	     32,159 MB
+\# Maximum memory size:	     31,779 MB
+\# Max mem available:	      6,989 MB
+\# Initial memory used:	         73 MB
+\#        process size:	      1,032 MB
+\# Thread usage limits (effective/default):	maxthreads 1024/1024 maxload 8.00/8.00
+\# Qt version:		4.8.5
+\# Window Manager:	other
+\# User Name:		cs199-cpo
+\o Working Directory:	hpse-10.EECS.Berkeley.EDU:/home/cc/cs199/fa13/class/cs199-cpo/ee240b/project
+\# Process Id:		32065
+\o 
+\o COPYRIGHT (C) 1992-2017  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2017  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading socket.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o *INFO* (icLic-303) virtuoso: PID=32065, Child Mode is true, ICPR Mode is true, Registration Timeout is 180 seconds, Communication Timeout is 180 seconds.
+\# Memory report: using         195 MB, process size 1,282 MB at UTC 2018.04.29 16:15:40.901
+\o STARTING CDSINIT
+\o END OF STANDARD CONFIG SETTINGS
+\o loading vars from ./.cdsenv for tool license
+\o loading vars from ./.cdsenv for tool asimenv
+\o loading vars from ./.cdsenv for tool auCore
+\o loading vars from ./.cdsenv for tool ihdl
+\o loading vars from ./.cdsenv for tool layout
+\o loading vars from ./.cdsenv for tool ui
+\o loading vars from ./.cdsenv for tool graphic
+\o loading vars from ./.cdsenv for tool schematic
+\o loading vars from ./.cdsenv for tool viva
+\o END OF CUSTOM CONFIG SETTINGS
+\o *Info*    Client has finished starting ... 
+\o 
+\p > 
+\o Loading pe.cxt 
+\a _treeSetOpcGUI(t)
+\r t
+\# Available memory:          6,927 MB at UTC 2018.04.29 16:15:48.385
+\# Memory report: Maximum memory size now 7,125 MB at UTC 2018.04.29 16:15:48.385
+\# Thread usage report: 9 active threads, active load 1.00 at UTC 2018.04.29 16:15:48.385
+\o Loading vqp.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = project_ph3
+\o 	Cell         = strongarm_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = project_ph3:strongarm_tb:1_none_Interactive.61
+\o 	Results DB   = /home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph3/strongarm_tb/adexl/results/data/Interactive.61.rdb
+\o 	Results Dir  = /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph3/strongarm_tb/adexl/results/data/Interactive.61/1/project_ph3:strongarm_tb:1
+\o 	Results Loc  = /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph3/strongarm_tb/adexl/results/data
+\o 	Project Dir  = /home/cc/cs199/fa13/class/cs199-cpo/simulation
+\o 	Setup DB loc = /home/cc/cs199/fa13/class/cs199-cpo/ee240b/project/project_ph3/strongarm_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o Loading simui.cxt 
+\o *INFO* (icLic-304) Start to connect to parent process (session=virtuoso31453, host=hpse-10.EECS.Berkeley.EDU). Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o *INFO* (icLic-305) Step 1: Connecting to parent. Spent time is 0 seconds.
+\o *INFO* (icLic-309) The registration of the child 32065 within 90 seconds is being processed ...
+\o *INFO* (icLic-310) The result of registration is true. Spend time is 1 seconds.
+\o *INFO* (icLic-308) The end of connection. Result is true. Total spent time is 1 seconds.
+\o Loading viva.cxt 
+\o Loading spectrei.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Loading monte.cxt 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 1) on testbench [
+\o           project_ph3:strongarm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var cff = "5f"
+\o Setting var nfi = "20"
+\o Setting var nfn_buff = "1"
+\o Setting var nfn_inv = "5"
+\o Setting var nfn_sa = "2.5"
+\o Setting var nfn_sr = "1"
+\o Setting var nfp_buff = "1"
+\o Setting var nfp_inv = "10"
+\o Setting var nfp_sa = "1"
+\o Setting var nfp_sr = "1"
+\o Setting var nfs = "2"
+\o Setting var nft = "20"
+\o Setting var t_delay = "100e-12"
+\o Setting var t_per = "200p"
+\o Setting var t_rise = "20p"
+\o Setting var t_sim = "1.8e-9"
+\o Setting temp(T) = 27
+\o Setting var vamp = "50m"
+\o Setting var vdd = "1.2"
+\o Setting var vin1 = "-0.6"
+\o Setting var vin2 = "20m"
+\o Setting var vodc = "600m"
+\o Setting var voff = "-300m"
+\o Setting var vref = "600m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph3/strongarm_tb/adexl/results/data/Interactive.61/1/project_ph3:strongarm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph3/strongarm_tb/adexl/results/data/Interactive.61/1/project_ph3:strongarm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 1)
+\o 
+\o generate netlist...
+\o Loading seCore.cxt 
+\o Initializing the control file using cp:
+\o     cp /share/instsww/cadence/IC.06.17.716/tools.lnx86/dfII/etc/si/control.spectre /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph3/strongarm_tb/adexl/results/data/Interactive.61/1/project_ph3:strongarm_tb:1/netlist/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Begin Incremental Netlisting Apr 29 09:17:13 2018
+\o Loading gpdk045/libInit.il ...
+\o 	Loading gpdk045/loadCxt.ile ... done!
+\o 	Loading context 'gpdk045' from library 'gpdk045' ... done!
+\o 	Loading context 'pdkUtils' from library 'gpdk045' ... done!
+\o 	Loading gpdk045/gpdk045_customFilter.il ... done!
+\o 	Loading gpdk045/libInitCustomExit.il ... 
+\o 	Loading Environment Settings ...
+\o 	Loading Model Management File ...
+\o 	Loading gpdk045/gpdk045_PDKRegistrations.il ... done!
+\o 
+\o   *************************************************************           
+\o   *              Cadence Design Systems, Inc.                 *           
+\o   *                                                           *           
+\o   *                    Generic 45nm PDK                       *           
+\o   *                        (gpdk045)                          *           
+\o   *                                                           *           
+\o   *************************************************************           
+\o 	
+\o 
+\o 	VERSION: 5.0 (22-Feb-2016)
+\o 
+\o done!
+\o Loaded gpdk045/libInit.il successfully!
+\o End netlisting Apr 29 09:17:15 2018
+\# Memory report: using         296 MB, process size 1,383 MB at UTC 2018.04.29 16:17:15.604
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   40
+\o 
+\o 	Elapsed time:          2.0s (20.00/s)
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           project_ph3:strongarm_tb:1 ] for Point ID (0 1).
+\o 
+\o Delete psf data in /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph3/strongarm_tb/adexl/results/data/Interactive.61/1/project_ph3:strongarm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o Loading paraplot.cxt 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 1) on testbench [
+\o           project_ph3:strongarm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 2) on testbench [
+\o           project_ph3:strongarm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var vamp = "150m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph3/strongarm_tb/adexl/results/data/Interactive.61/2/project_ph3:strongarm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph3/strongarm_tb/adexl/results/data/Interactive.61/2/project_ph3:strongarm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 2)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Apr 29 09:17:23 2018
+\o End netlisting Apr 29 09:17:23 2018
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           project_ph3:strongarm_tb:1 ] for Point ID (0 2).
+\o 
+\o Delete psf data in /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph3/strongarm_tb/adexl/results/data/Interactive.61/2/project_ph3:strongarm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 2) on testbench [
+\o           project_ph3:strongarm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 3) on testbench [
+\o           project_ph3:strongarm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var vamp = "250m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph3/strongarm_tb/adexl/results/data/Interactive.61/3/project_ph3:strongarm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph3/strongarm_tb/adexl/results/data/Interactive.61/3/project_ph3:strongarm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 3)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Apr 29 09:17:28 2018
+\o End netlisting Apr 29 09:17:28 2018
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           project_ph3:strongarm_tb:1 ] for Point ID (0 3).
+\o 
+\o Delete psf data in /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph3/strongarm_tb/adexl/results/data/Interactive.61/3/project_ph3:strongarm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 3) on testbench [
+\o           project_ph3:strongarm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 4) on testbench [
+\o           project_ph3:strongarm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var vamp = "350m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph3/strongarm_tb/adexl/results/data/Interactive.61/4/project_ph3:strongarm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph3/strongarm_tb/adexl/results/data/Interactive.61/4/project_ph3:strongarm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 4)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Apr 29 09:17:33 2018
+\o End netlisting Apr 29 09:17:33 2018
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           project_ph3:strongarm_tb:1 ] for Point ID (0 4).
+\o 
+\o Delete psf data in /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph3/strongarm_tb/adexl/results/data/Interactive.61/4/project_ph3:strongarm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 4) on testbench [
+\o           project_ph3:strongarm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 7,406 MB at UTC 2018.04.29 16:17:37.621
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 5) on testbench [
+\o           project_ph3:strongarm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var vamp = "450m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph3/strongarm_tb/adexl/results/data/Interactive.61/5/project_ph3:strongarm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph3/strongarm_tb/adexl/results/data/Interactive.61/5/project_ph3:strongarm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 5)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Apr 29 09:17:37 2018
+\o End netlisting Apr 29 09:17:38 2018
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           project_ph3:strongarm_tb:1 ] for Point ID (0 5).
+\o 
+\o Delete psf data in /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph3/strongarm_tb/adexl/results/data/Interactive.61/5/project_ph3:strongarm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 5) on testbench [
+\o           project_ph3:strongarm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 6) on testbench [
+\o           project_ph3:strongarm_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var vamp = "550m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph3/strongarm_tb/adexl/results/data/Interactive.61/6/project_ph3:strongarm_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph3/strongarm_tb/adexl/results/data/Interactive.61/6/project_ph3:strongarm_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 6)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Apr 29 09:17:42 2018
+\o End netlisting Apr 29 09:17:42 2018
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           project_ph3:strongarm_tb:1 ] for Point ID (0 6).
+\o 
+\o Delete psf data in /home/cc/cs199/fa13/class/cs199-cpo/simulation/project_ph3/strongarm_tb/adexl/results/data/Interactive.61/6/project_ph3:strongarm_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 6) on testbench [
+\o           project_ph3:strongarm_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 7,251 MB at UTC 2018.04.29 16:18:07.622
+\# Memory report: Maximum memory size now 7,106 MB at UTC 2018.04.29 16:19:37.625
+\# Memory report: Maximum memory size now 7,389 MB at UTC 2018.04.29 16:19:47.626
+\# Memory report: Maximum memory size now 7,195 MB at UTC 2018.04.29 16:20:17.635
+\# Memory report: Maximum memory size now 7,366 MB at UTC 2018.04.29 16:22:37.639
+\o Job 2 timed out after no activity in 300 seconds.
+\o *Info*    (ADE-3072): Simulation stopped by ADE because the
+\o           Simulation Run Timeout has exceeded its specified value.
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables9".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o *Info*    Received signal SIGTERM.
+\o 
+\o 
