@@ -6,7 +6,7 @@
 	url = https://github.com/ocakgun/BAG_framework.git
 [submodule "BAG2_TEMPLATES_EC"]
 	path = BAG2_TEMPLATES_EC
-	url = https://github.com/xlchan/BAG2_TEMPLATES_EC
+	url = https://github.com/sdaudlin/BAG2_TEMPLATES_EC
 [submodule "BAG_XBase_demo"]
 	path = BAG_XBase_demo
 	url = https://github.com/xlchan/BAG_XBase_demo.git
