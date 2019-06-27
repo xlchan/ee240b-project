@@ -3,7 +3,7 @@
 	url = https://github.com/xlchan/gpdk045.git
 [submodule "BAG_framework"]
 	path = BAG_framework
-	url = https://github.com/xlchan/BAG_framework.git
+	url = https://github.com/ocakgun/BAG_framework.git
 [submodule "BAG2_TEMPLATES_EC"]
 	path = BAG2_TEMPLATES_EC
 	url = https://github.com/xlchan/BAG2_TEMPLATES_EC
