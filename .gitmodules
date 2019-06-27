@@ -1,9 +1,6 @@
 [submodule "gpdk045"]
 	path = gpdk045
 	url = https://github.com/xlchan/gpdk045.git
-[submodule "BAG_framework"]
-	path = BAG_framework
-	url = https://github.com/sdaudlin/BAG_framework.git
 [submodule "BAG2_TEMPLATES_EC"]
 	path = BAG2_TEMPLATES_EC
 	url = https://github.com/xlchan/BAG2_TEMPLATES_EC
@@ -16,3 +13,6 @@
 [submodule "bag_testbenches_ec"]
 	path = bag_testbenches_ec
 	url = https://github.com/xlchan/bag_testbenches_ec.git
+[submodule "BAG_framework"]
+	path = BAG_framework
+	url = https://github.com/sdaudlin/BAG_framework.git
