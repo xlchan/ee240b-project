@@ -15,4 +15,4 @@
 	url = https://github.com/xlchan/bag_testbenches_ec.git
 [submodule "BAG_framework"]
 	path = BAG_framework
-	url = https://github.com/sdaudlin/BAG_framework.git
+	url = https://github.com/edwardcwang/BAG_framework.git
